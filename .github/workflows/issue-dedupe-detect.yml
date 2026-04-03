@@ -50,7 +50,7 @@ jobs:
           use_bedrock: "true"
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allowed_bots: ${{ inputs.allowed_bots }}
-          additional_permissions: "Bash(gh:*)"
+          additional_permissions: "Bash(gh *),Bash(gh)"
           show_full_output: "true"
           claude_args: "--model ${{ inputs.claude_model }}"
           prompt: |
